@@ -1,0 +1,14 @@
+
+
+<ul>
+      <!-- <li *ngFor="let product of products" (click)="onSelect(product)"> -->
+      <li *ngFor="let product of products" >
+            <a routerLink="/detail/{{product.id}}">
+                  <span>{{product.id}} </span> {{product.name}}
+            </a>
+      </li>
+</ul>
+
+<app-product-detail [product]="selectedProduct"></app-product-detail>
+
+
